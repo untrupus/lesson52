@@ -53,6 +53,10 @@ class App extends Component {
             )
         }
 
+        // propsDeck = deck.map(card => {
+        //     return {suit: card.props.suit, rank: card.props.rank}
+        // })
+
         return (
             <div className="playingCards faceImages">
                 <PokerHand
