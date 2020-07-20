@@ -13,14 +13,24 @@ class PokerHand extends Component {
         for (let i = 0; i < 5; i++) {
             arr.push(this.state.result[i]);
         }
-        let res = 0;
+        let res = [];
         arr.sort(function (a, b) {
             if (a.rank === b.rank) {
-                res++
+                res.push(a, b);
             }
         });
-
-
+        console.log(res)
+        switch (res.length) {
+            case  2:
+                return 'one pair';
+                break;
+            case 3:
+                return 'three of a kind';
+                break;
+            default:
+                return 'no matches';
+                break;
+        }
     }
 
     render() {
