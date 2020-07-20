@@ -20,20 +20,7 @@ class PokerHand extends Component {
             }
         });
 
-        switch (res) {
-            case 1:
-                return 'one pair';
-                break;
-            case 2:
-                return 'three of a kind';
-                break;
-            case 3:
-                return 'two pairs';
-                break;
-            default:
-                return 'no match';
-                break;
-        }
+
     }
 
     render() {
